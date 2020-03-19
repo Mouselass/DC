@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Deal Communications</title>
+	<title>Деловые коммуникации</title>
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type = "text/javascript" src = "js/jquery-3.4.1.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">  <!-- favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="header col-12 col-lg-6 col-md-12 col-xl-6  offset-xl-3 offset-lg-3	"><span class=""><h2>История развития средств коммуникаций</h2></span></div> <!-- Главный заголовок -->
-				<div class="button col-1 offset-1"><button type="button" class="btn btn-outline-secondary">Light</button></div> <!-- кнопки -->
-				<div class="button col-1"><button type="button" class="btn btn-outline-dark">Dark</button></div> <!-- кнопки -->
+				<div class="header col-12 col-lg-6 col-md-12 col-xl-6  offset-xl-3 offset-lg-3	"><span class=""><h2>История развития средств коммуникаций</h2></span></div> 
+				<a type="btn" class="change offset-xl-1 offset-lg-1 offset-md-0"><img src="https://blogas.info/img/darkthem1.png" alt="Темная тема для сайта" title="Темная тема для сайта" style="max-width: 20px; margin-top: 25px; cursor: pointer;"></a>
 			</div>
 			<div class="border-line"></div>
 		</div>
@@ -20,10 +27,15 @@
 	<main>
 		<div class="container">
 			<div class="row main">
-				<div class="col-md-4 offset-4"><span><h3>Название первого раздела</h3></span></div>
+				<div class="col-md-4 offset-4"><span><h3>Введение</h3></span></div>
 			</div> <!-- заголовок h3 -->
 			<div class="row text">
-				<div class="col-12"><span><h6>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</h6></span></div>
+				<div class="col-12"><span><h6>В истории развития средств коммуникации можно выделить пять основных периодов.<br>
+				1. Довербальный период. Это период развития пещерного человека, не владеющего еще членораздельной речью (слово «вербальный» означает словесный). Продолжался он сотни тысяч лет. Коммуникация между первобытными людьми осуществлялась с помощью простых звуков, мимики, жестов, наскальных рисунков.<br>
+				2. Период устного общения. Членораздельная речь как средство общения появилась примерно пятьдесят тысяч лет назад. Стал развиваться язык -стихийно возникшая в человеческом обществе система дискретных, членораздельных звуковых знаков. Постепенно язык становится основным средством коммуникации и передачи знаний.<br>
+				3. Период появления и развития письменности как средства общения. Он начался около пяти тысяч лет назад. Письменность по-разному развивалась на Западе и на Востоке. Появление возможности фиксации знаний с помощью письменных знаков -сначала на камне и глине, а затем на папирусе и бумаге – это качественный скачок в развитии общения и цивилизации в целом.<br>
+				4. Четвертый период связан с эпохой книгопечатания. Она началась около пятисот лет назад с появлением в Германии первого печатного станка с подвижными литерами, изобретение которого связывают с именем Иоганна Гутенберга (1399-1468), впервые напечатавшего в городе Майнц 42-строчную Библию. Значение этого изобретения трудно переоценить. Считается, что это самое большое достижение человечества за последнее тысячелетие.<br>
+				5. Пятый, современный, период охватывает последние сто лет. Он знаменуется появлением таких средств общения (коммуникации), как радио, кино, телевидение, компьютерные сети, системы мультимедиа. Нетрудно усмотреть в них одно общее свойство: все они позволяют использовать для общения невербальные знаковые системы - человек как бы возвращается к тем средствам общения, с которых началось его развитие. Это не случайно: потребность в общении на невербальном уровне определена самой природой человека, особенностью его сознания.<br></h6></span></div>
 			</div>	
 			<div class="row main">
 				<div class="col-md-4 offset-4"><span><h3>Название второго раздела</h3></span></div>
@@ -39,5 +51,15 @@
 			</div>
 		</div>
 	</main>
+	<script type="text/javascript">
+		 $(function(){
+		 var gun = localStorage.getItem('name') === null || localStorage.getItem('name') === 'false' ? false : true;
+		 $("body").toggleClass("dark", gun);
+		 $(".change").on("click", function() {
+		 $("body").toggleClass("dark");
+		 var gun = $('body').is('.dark'); 
+		localStorage.setItem('name', gun); 
+		 });});
+	</script>
 </body>
 </html>
