@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Deal Communications</title>
+	<title>Деловые коммуникации</title>
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type = "text/javascript" src = "js/jquery-3.4.1.js"></script>
 </head>
 <body>
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="header col-12 col-lg-6 col-md-12 col-xl-6  offset-xl-3 offset-lg-3	"><span class=""><h2>История развития средств коммуникаций</h2></span></div> <!-- Главный заголовок -->
-				<div class="button col-1 offset-1"><button type="button" class="btn btn-outline-secondary">Light</button></div> <!-- кнопки -->
-				<div class="button col-1"><button type="button" class="btn btn-outline-dark">Dark</button></div> <!-- кнопки -->
+				<div class="header col-12 col-lg-6 col-md-12 col-xl-6  offset-xl-3 offset-lg-3	"><span class=""><h2>История развития средств коммуникаций</h2></span></div> 
+				<a type="btn" class="change offset-xl-1 offset-lg-1 offset-md-0"><img src="https://blogas.info/img/darkthem1.png" alt="Темная тема для сайта" title="Темная тема для сайта" style="max-width: 20px; margin-top: 25px; cursor: pointer;"></a>
 			</div>
 			<div class="border-line"></div>
 		</div>
@@ -39,5 +39,15 @@
 			</div>
 		</div>
 	</main>
+	<script type="text/javascript">
+		 $(function(){
+		 var gun = localStorage.getItem('name') === null || localStorage.getItem('name') === 'false' ? false : true;
+		 $("body").toggleClass("dark", gun);
+		 $(".change").on("click", function() {
+		 $("body").toggleClass("dark");
+		 var gun = $('body').is('.dark'); 
+		localStorage.setItem('name', gun); 
+		 });});
+	</script>
 </body>
 </html>
