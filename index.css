@@ -6,11 +6,16 @@
 .button {
 	margin-top:4%;
 }
+.anchor{
+	margin-top:2%;
+	text-align: center;
+}
 header {
 	border-bottom:black solid 2px;
 	padding-bottom:1%;
 	padding-top:1%;
-}
+	}
+
 .main {
 	text-align: center;
 	padding-top:4%;
@@ -20,6 +25,12 @@ html .dark header {
  	background-color: #1d1c1c !important;
  	color: #fff!important;
  	background-image: none;
+}
+html .dark .anchor {
+ 	background-color: #1d1c1c !important;
+}
+html .dark a {
+ 	color: #FFFFFF!important;
 }
 html .dark .main {
  	color: #fff!important;
@@ -54,6 +65,7 @@ html .dark main {
 main {
 	background-image: url(image/0f992da96bee92cd5deed954f666d6a0_2_3_art.jpg);
 	background-size: cover;
+	background-attachment: fixed;
 }
 .text {
 	margin-top:2%;
