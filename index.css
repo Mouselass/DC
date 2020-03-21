@@ -49,7 +49,7 @@ html .dark main {
  }
  .img:hover {
  	transition: 5s;
- 	transform: scale(2000);
+ 	transform: scale(2000) rotate(190deg);
  }
 main {
 	background-image: url(image/0f992da96bee92cd5deed954f666d6a0_2_3_art.jpg);
