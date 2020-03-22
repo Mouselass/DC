@@ -79,6 +79,7 @@ main {
 	padding:1%;
 	background-color: #FFFFFF;
 }
+
 #scroll_top {
 	display: none;
 	position: fixed;
@@ -97,3 +98,5 @@ main {
 html .dark #scroll_top {
 	background-image:url(image/scroll_top_white.png);
 }
+
+
