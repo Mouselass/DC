@@ -14,8 +14,13 @@ header {
 	border-bottom:black solid 2px;
 	padding-bottom:1%;
 	padding-top:1%;
-	}
-
+}
+footer {
+	text-align: center;
+	border-top:black solid 2px;
+	background-color: #333;
+	color: #fff;
+}
 .main {
 	text-align: center;
 	padding-top:4%;
@@ -68,12 +73,16 @@ main {
 	background-attachment: fixed;
 }
 .text {
+	text-align: justify;
+	line-height: 1.5;
 	margin-top:2%;
 	border:black solid 2px;
 	padding:1%;
 	background-color: #FFFFFF;
 }
  .text-1 {
+ 	text-align: justify;
+ 	line-height: 1.5;
 	margin-top:2%;
 	border:black solid 2px;
 	padding:1%;
@@ -98,5 +107,15 @@ main {
 html .dark #scroll_top {
 	background-image:url(image/scroll_top_white.png);
 }
-
-
+html .dark .dropdown-item {
+ 	background-color: #1d1c1c
+}
+html .dark .dropdown-menu {
+ 	background-color: #1d1c1c
+}
+html .dark .in_top span {
+ 	color: #fff;
+}
+html .dark .in_top {
+ 	background-color: #1d1c1c
+}
