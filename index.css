@@ -64,13 +64,14 @@ html .dark main {
  	transform: rotate(360deg);
  }
  .img:hover {
- 	transition: 5s;
- 	transform: scale(2000) rotate(190deg);
+ 	transition: 1s;
+ 	transform: scale(2000) rotate(180deg);
  }
 main {
 	background-image: url(image/0f992da96bee92cd5deed954f666d6a0_2_3_art.jpg);
 	background-size: cover;
 	background-attachment: fixed;
+	padding-bottom:2%;
 }
 .text {
 	text-align: justify;
@@ -108,14 +109,40 @@ html .dark #scroll_top {
 	background-image:url(image/scroll_top_white.png);
 }
 html .dark .dropdown-item {
- 	background-color: #1d1c1c
+ 	background-color: #1d1c1c;
 }
 html .dark .dropdown-menu {
- 	background-color: #1d1c1c
+ 	background-color: #1d1c1c;
 }
 html .dark .in_top span {
  	color: #fff;
 }
 html .dark .in_top {
  	background-color: #1d1c1c
+}
+.margin {
+	margin-bottom:2%;
+}
+.text-footer {
+	color:black;
+	padding-bottom: 1%;
+}
+.footer {
+	background-color: #ffffff;
+}
+html .dark .footer {
+	background-color:#1d1c1c;
+}
+html .dark .text-footer {
+	color:white;
+}
+@media (min-width:200px) and (max-width: 1024px) {
+	.border-need {
+		border:1px solid black;
+		background-color: white;
+	}
+	.dark .border-need {
+		border:1px solid black;
+		background-color: #1d1c1c;
+	}
 }
